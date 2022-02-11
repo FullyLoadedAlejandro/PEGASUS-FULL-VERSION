@@ -1,0 +1,802 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="costura" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.metadata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_antire_runtime_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.antire.runtime.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bouncycastle_crypto_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bouncycastle.crypto.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_licensing_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.licensing.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_1_5_3_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.1.5.3.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifubutton_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifubutton.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifucheckbox_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifucheckbox.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifucircleprogress_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifucircleprogress.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifucolortransition_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifucolortransition.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifudatagridview_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifudatagridview.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifudatepicker_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifudatepicker.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifudropdown_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifudropdown.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifuformdock_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifuformdock.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifugauge_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifugauge.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifugradientpanel_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifugradientpanel.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifugroupbox_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifugroupbox.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifuimagebutton_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifuimagebutton.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifulabel_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifulabel.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifuloader_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifuloader.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifupages_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifupages.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifupanel_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifupanel.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifupicturebox_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifupicturebox.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifuprogressbar_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifuprogressbar.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifuradiobutton_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifuradiobutton.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifurating_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifurating.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifuscrollbar_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifuscrollbar.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifuseparator_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifuseparator.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifushadowpanel_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifushadowpanel.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifushapes_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifushapes.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifuslider_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifuslider.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifusnackbar_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifusnackbar.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifutextbox_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifutextbox.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifutoggleswitch_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifutoggleswitch.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifutooltip_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifutooltip.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifutransition_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifutransition.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_bunifuusercontrol_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.bunifuusercontrol.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_bunifu_ui_winforms_deprecated_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.bunifu.ui.winforms.deprecated.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_cgeoip_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.cgeoip.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_costura_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.costura.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_costura_pdb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.costura.pdb.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_customcontrols_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.customcontrols.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_customcontrols_pdb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.customcontrols.pdb.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_discord_net_commands_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.discord.net.commands.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_discord_net_core_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.discord.net.core.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_discord_net_rest_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.discord.net.rest.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_discord_net_webhook_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.discord.net.webhook.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_discord_net_websocket_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.discord.net.websocket.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_dnlib_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.dnlib.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_fastcoloredtextbox_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.fastcoloredtextbox.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_guna_ui2_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.guna.ui2.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_iconextractor_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.iconextractor.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_microsoft_bcl_asyncinterfaces_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.microsoft.bcl.asyncinterfaces.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_microsoft_win32_primitives_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.microsoft.win32.primitives.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_mono_cecil_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.mono.cecil.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_mono_cecil_mdb_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.mono.cecil.mdb.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_mono_cecil_pdb_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.mono.cecil.pdb.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_mono_cecil_rocks_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.mono.cecil.rocks.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_mono_httputility_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.mono.httputility.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_mono_nat_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.mono.nat.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_netstandard_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.netstandard.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_newtonsoft_json_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.newtonsoft.json.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_pinvoke_kernel32_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.pinvoke.kernel32.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_pinvoke_shell32_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.pinvoke.shell32.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_pinvoke_windows_core_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.pinvoke.windows.core.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_protobuf_net_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.protobuf-net.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_server_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.server.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_server_pdb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.server.pdb.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_sharpupdate_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.sharpupdate.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_sharpupdate_pdb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.sharpupdate.pdb.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_siticone_ui_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.siticone.ui.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_appcontext_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.appcontext.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_buffers_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.buffers.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_collections_concurrent_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.collections.concurrent.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_collections_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.collections.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_collections_immutable_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.collections.immutable.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_collections_nongeneric_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.collections.nongeneric.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_collections_specialized_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.collections.specialized.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_componentmodel_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.componentmodel.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_componentmodel_eventbasedasync_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.componentmodel.eventbasedasync.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_componentmodel_primitives_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.componentmodel.primitives.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_componentmodel_typeconverter_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.componentmodel.typeconverter.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_console_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.console.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_data_common_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.data.common.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_diagnostics_contracts_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.diagnostics.contracts.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_diagnostics_debug_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.diagnostics.debug.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_diagnostics_diagnosticsource_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.diagnostics.diagnosticsource.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_diagnostics_fileversioninfo_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.diagnostics.fileversioninfo.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_diagnostics_process_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.diagnostics.process.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_diagnostics_stacktrace_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.diagnostics.stacktrace.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_diagnostics_textwritertracelistener_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.diagnostics.textwritertracelistener.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_diagnostics_tools_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.diagnostics.tools.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_diagnostics_tracesource_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.diagnostics.tracesource.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_diagnostics_tracing_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.diagnostics.tracing.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_drawing_primitives_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.drawing.primitives.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_dynamic_runtime_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.dynamic.runtime.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_globalization_calendars_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.globalization.calendars.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_globalization_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.globalization.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_globalization_extensions_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.globalization.extensions.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_interactive_async_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.interactive.async.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_io_compression_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.io.compression.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_io_compression_zipfile_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.io.compression.zipfile.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_io_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.io.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_io_filesystem_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.io.filesystem.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_io_filesystem_driveinfo_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.io.filesystem.driveinfo.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_io_filesystem_primitives_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.io.filesystem.primitives.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_io_filesystem_watcher_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.io.filesystem.watcher.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_io_isolatedstorage_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.io.isolatedstorage.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_io_memorymappedfiles_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.io.memorymappedfiles.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_io_pipes_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.io.pipes.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_io_unmanagedmemorystream_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.io.unmanagedmemorystream.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_linq_async_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.linq.async.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_linq_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.linq.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_linq_expressions_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.linq.expressions.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_linq_parallel_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.linq.parallel.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_linq_queryable_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.linq.queryable.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_memory_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.memory.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_net_http_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.net.http.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_net_nameresolution_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.net.nameresolution.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_net_networkinformation_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.net.networkinformation.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_net_ping_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.net.ping.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_net_primitives_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.net.primitives.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_net_requests_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.net.requests.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_net_security_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.net.security.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_net_sockets_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.net.sockets.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_net_webheadercollection_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.net.webheadercollection.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_net_websockets_client_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.net.websockets.client.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_net_websockets_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.net.websockets.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_numerics_vectors_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.numerics.vectors.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_objectmodel_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.objectmodel.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_reflection_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.reflection.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_reflection_extensions_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.reflection.extensions.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_reflection_primitives_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.reflection.primitives.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_resources_reader_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.resources.reader.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_resources_resourcemanager_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.resources.resourcemanager.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_resources_writer_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.resources.writer.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_runtime_compilerservices_unsafe_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.runtime.compilerservices.unsafe.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_runtime_compilerservices_visualc_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.runtime.compilerservices.visualc.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_runtime_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.runtime.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_runtime_extensions_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.runtime.extensions.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_runtime_handles_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.runtime.handles.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_runtime_interopservices_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.runtime.interopservices.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_runtime_interopservices_runtimeinformation_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.runtime.interopservices.runtimeinformation.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_runtime_numerics_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.runtime.numerics.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_runtime_serialization_formatters_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.runtime.serialization.formatters.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_runtime_serialization_json_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.runtime.serialization.json.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_runtime_serialization_primitives_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.runtime.serialization.primitives.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_runtime_serialization_xml_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.runtime.serialization.xml.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_security_claims_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.security.claims.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_security_cryptography_algorithms_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.security.cryptography.algorithms.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_security_cryptography_csp_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.security.cryptography.csp.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_security_cryptography_encoding_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.security.cryptography.encoding.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_security_cryptography_primitives_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.security.cryptography.primitives.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_security_cryptography_x509certificates_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.security.cryptography.x509certificates.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_security_principal_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.security.principal.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_security_securestring_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.security.securestring.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_text_encoding_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.text.encoding.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_text_encoding_extensions_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.text.encoding.extensions.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_text_regularexpressions_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.text.regularexpressions.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_threading_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.threading.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_threading_overlapped_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.threading.overlapped.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_threading_tasks_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.threading.tasks.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_threading_tasks_extensions_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.threading.tasks.extensions.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_threading_tasks_parallel_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.threading.tasks.parallel.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_threading_threadpool_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.threading.threadpool.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_threading_thread_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.threading.thread.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_threading_timer_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.threading.timer.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_valuetuple_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.valuetuple.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_xml_readerwriter_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.xml.readerwriter.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_xml_xdocument_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.xml.xdocument.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_xml_xmldocument_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.xml.xmldocument.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_xml_xmlserializer_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.xml.xmlserializer.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_xml_xpath_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.xml.xpath.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_system_xml_xpath_xdocument_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.system.xml.xpath.xdocument.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="costura_vestris_resourcelib_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\costura.vestris.resourcelib.dll.compressed;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="custom_alert_notifications_alert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\custom_alert_notifications.alert.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="InputDialog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InputDialog.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_FormSendFileToMemory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.FormSendFileToMemory.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FormAbout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FormAbout.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FormAudio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FormAudio.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FormBlockClients" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FormBlockClients.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FormBuilder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FormBuilder.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FormCertificate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FormCertificate.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FormChat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FormChat.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FormDOS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FormDOS.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FormDownloadFile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FormDownloadFile.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FormFileManager" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FormFileManager.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FormFileSearcher" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FormFileSearcher.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FormFun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FormFun.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FormKeylogger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FormKeylogger.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FormMiner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FormMiner.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FormNetstat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FormNetstat.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FormPorts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FormPorts.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FormPowerShell" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FormPowerShell.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FormProcessManager" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FormProcessManager.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FormRegistryEditor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FormRegistryEditor.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FormRegValueEditBinary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FormRegValueEditBinary.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FormRegValueEditMultiString" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FormRegValueEditMultiString.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FormRegValueEditString" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FormRegValueEditString.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FormRegValueEditWord" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FormRegValueEditWord.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FormRemoteDesktop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FormRemoteDesktop.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FormSetting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FormSetting.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FormShell" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FormShell.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FormWebcam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FormWebcam.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FrmAngry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FrmAngry.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FrmCSPM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FrmCSPM.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FrmDiscordST3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FrmDiscordST3.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FrmEmailer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FrmEmailer.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FrmInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FrmInfo.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FrmNoStub" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FrmNoStub.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FrmReco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FrmReco.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FrmSkynet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FrmSkynet.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_FrmWebHookSPM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.FrmWebHookSPM.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.Login.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_PEGASUSMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.PEGASUSMain.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_Register" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.Register.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_Remote_Desktop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.Remote_Desktop.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_Remote_hVNC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.Remote_hVNC.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_Splashes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.Splashes.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Forms_Welcome" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Forms.Welcome.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_FrmSplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.FrmSplash.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_FULL_VERSION_exe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS FULL VERSION.exe.licenses;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_PegasusBytes_DarkBytes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.PegasusBytes.DarkBytes.key;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_PegasusBytes_PegasusBytes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.PegasusBytes.PegasusBytes.key;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Properties_Resources" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Properties.Resources.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_RhVNC_Connections" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.RhVNC_Connections.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_Tools_Plugin_RemotehVNC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.Tools.Plugin.RemotehVNC.key;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PEGASUS_VNCForm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PEGASUS.VNCForm.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
